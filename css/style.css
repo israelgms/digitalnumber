@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+   font-family: digital;
+   src: url(../font/digital-7mono.ttf);
+}
+
+/* Section */
+section {
+    text-align: center;
+}
+/* fim Section */
+
+
+/* título e margem */
+.title h1 {
+    margin: 44px 0 10px 0;
+    font-size: 36px;
+    color: #EF6C00;
+}
+
+.title hr {
+    background-color: #CFCFCF;
+    width: 255px;
+    height: 1px;
+    margin: 0 auto;
+}
+/* Fim título e margem */
+
+/* Input e botão */
+.input input, button, #newGame{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.input input {
+    border: 1px solid #FF6600;
+    border-radius: 4px;
+    width: 217px;
+    font-weight: 400;
+    height: 42px;
+    padding-left: 12px;
+}
+
+.input button {
+    background: linear-gradient(180deg, #EF6C00 0%, #C0661C 100%);
+    border-radius: 4px;
+    width: 70px;
+    font-weight: 700;
+    height: 42px;
+    color: #FFFFFF;
+    margin-left: 11px;
+    cursor: pointer;
+}
+/* fim Input e botão */
+
+
+#menorMaior {
+    margin-top: 49px;
+    color: #FF6600;
+}
+
+.number span{
+    font-size: 30vh;
+    font-family: digital;
+}
+
+#newGame {
+    height: 42px;
+    width: 130px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(180deg, #434854 0%, #9E9E9E 100%);
+    margin: 31px 0 78px 0;
+    cursor: pointer;
+}
+
+#newGame img {
+    height: 10px;
+    margin-right: 8px;
+}
+
+.grids {
+    display: flex;
+}

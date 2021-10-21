@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <title>Acerte o número</title>
+    <script src="./js/newGame.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <main>
+        <script>
+            newGame();
+        </script>
+        <section>
+            <div class="playArea">
+                <div class="title">
+                    <h1>QUAL É O NÚMERO?</h1>
+                    <hr>
+                </div>
+                <div class="number">
+                    <p id="menorMaior">É menor</p>
+                    <div class="grids">
+                        <div class="grid-container">
+                            <div class="topo"></div>
+                            <div class="topo-esquerda"></div>
+                            <div class="topo-direita"></div>
+                            <div class="meio-alto"></div>
+                            <div class="meio-baixo"></div>
+                            <div class="baixo-esquerda"></div>
+                            <div class="baixo-direita"></div>
+                            <div class="baixo"></div>
+                        </div>
+                        <div class="grid-container">
+                            <div class="topo"></div>
+                            <div class="topo-esquerda"></div>
+                            <div class="topo-direita"></div>
+                            <div class="meio-alto"></div>
+                            <div class="meio-baixo"></div>
+                            <div class="baixo-esquerda"></div>
+                            <div class="baixo-direita"></div>
+                            <div class="baixo"></div>
+                        </div>
+                    </div>
+                    <button id="newGame" type="button">
+                        <img src="./image/refresh_24px.png" alt="Refresh icon" onclick="newGame()">NOVA PARTIDA</button>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Digite o palpite">
+                    <button type="button">Enviar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
