@@ -14,8 +14,11 @@
 
 <body>
     <main>
-        <script>
-            newGame();
+        <script type="module">
+            let [number,s] = await getNumber();
+            // let input = palpite();
+            // percorreInput(input);
+            log(number, s)
         </script>
         <section>
             <div class="playArea">
@@ -26,34 +29,44 @@
                 <div class="number">
                     <p id="menorMaior">É menor</p>
                     <div class="grids">
-                        <div class="grid-container">
-                            <div class="topo"></div>
-                            <div class="topo-esquerda"></div>
-                            <div class="topo-direita"></div>
-                            <div class="meio-alto"></div>
-                            <div class="meio-baixo"></div>
-                            <div class="baixo-esquerda"></div>
-                            <div class="baixo-direita"></div>
-                            <div class="baixo"></div>
-                        </div>
-                        <div class="grid-container">
-                            <div class="topo"></div>
-                            <div class="topo-esquerda"></div>
-                            <div class="topo-direita"></div>
-                            <div class="meio-alto"></div>
-                            <div class="meio-baixo"></div>
-                            <div class="baixo-esquerda"></div>
-                            <div class="baixo-direita"></div>
-                            <div class="baixo"></div>
-                        </div>
+                        <div id="container">
+                            <div class="topo1"></div>
+                            <div class="topo1-esquerda"></div>
+                            <div class="baixo1-esquerda"></div>
+                            <div class="baixo1"></div>
+                            <div class="baixo1-direita"></div>
+                            <div class="topo1-direita"></div>
+                            <div class="meio1-alto"></div>
+                            <div class="meio1-baixo"></div>
+                          </div>
+                        <div id="container2">
+                            <div class="topo2"></div>
+                            <div class="topo2-esquerda"></div>
+                            <div class="baixo2-esquerda"></div>
+                            <div class="baixo2"></div>
+                            <div class="baixo2-direita"></div>
+                            <div class="topo2-direita"></div>
+                            <div class="meio2-alto"></div>
+                            <div class="meio2-baixo"></div>
+                          </div>
+                        <div id="container3">
+                            <div class="topo3"></div>
+                            <div class="topo3-esquerda"></div>
+                            <div class="baixo3-esquerda"></div>
+                            <div class="baixo3"></div>
+                            <div class="baixo3-direita"></div>
+                            <div class="topo3-direita"></div>
+                            <div class="meio3-alto"></div>
+                            <div class="meio3-baixo"></div>
+                          </div>
+                    </div class="divNewGame">
+                    <button id="newGame" type="button" onclick="newGame()"><img src="./image/refresh_24px.png" alt="Refresh icon">NOVA PARTIDA</button>
                     </div>
-                    <button id="newGame" type="button">
-                        <img src="./image/refresh_24px.png" alt="Refresh icon" onclick="newGame()">NOVA PARTIDA</button>
-                </div>
                 <div class="input">
-                    <input type="text" placeholder="Digite o palpite">
-                    <button type="button">Enviar</button>
+                    <input type="number" min="0" max="300" oninput="input(this)" id="palpite" placeholder="Digite o palpite">
+                    <button type="button" id="button" onclick="palpite()">Enviar</button>
                 </div>
+                <div class="teste"></div>
             </div>
         </section>
     </main>

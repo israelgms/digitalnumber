@@ -1,73 +1,226 @@
-.grid-container {
-    margin: 0 auto;
-    max-width: 200px;
-    max-height: 600px;
+#container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". topo ."
-      "topo-esquerda meio-alto topo-direita"
-      "baixo-esquerda meio-baixo baixo-direita"
-      ". baixo ."
+      ". topo1 ."
+      "topo1-esquerda meio1-alto topo1-direita"
+      "baixo1-esquerda meio1-baixo baixo1-direita"
+      ". baixo1 .";
+    width: 250px;
+    height: 300px;
   }
   
-  .topo { grid-area: topo; }
+  .topo1 { grid-area: topo1; }
   
-  .topo-esquerda { grid-area: topo-esquerda; }
+  .topo1-esquerda { grid-area: topo1-esquerda; }
   
-  .topo-direita { grid-area: topo-direita; }
+  .baixo1-esquerda { grid-area: baixo1-esquerda; }
   
-  .meio-alto { grid-area: meio-alto; }
+  .baixo1 { grid-area: baixo1; }
   
-  .meio-baixo { grid-area: meio-baixo; }
+  .baixo1-direita { grid-area: baixo1-direita; }
   
-  .baixo-esquerda { grid-area: baixo-esquerda; }
+  .topo1-direita { grid-area: topo1-direita; }
   
-  .baixo-direita { grid-area: baixo-direita; }
+  .meio1-alto { grid-area: meio1-alto; }
   
-  .baixo { grid-area: baixo; }
+  .meio1-baixo { grid-area: meio1-baixo; }
 
-  /*  */
-
-.topo {
-    background: black;
-    height: 50px;
+.topo1 {
+    background-color: black;
     clip-path: polygon(0 82%, 100% 83%, 90% 100%, 10% 100%);
 }
 
-.topo-esquerda{
+.topo1-esquerda{
     background-color: black;
     clip-path: polygon(88% 100%, 88% 0, 100% 10%, 100% 90%);
 }
-.topo-direita{
+.topo1-direita{
     background-color: black;
     clip-path: polygon(0 90%, 0 10%, 12% 0, 12% 100%);
 }
 
-.meio-alto {
+.meio1-alto {
+    background-color: #DDDDDD;
+    clip-path: polygon(90% 90%, 100% 100%, 0 100%, 10% 88%);
+}
+
+.meio1-baixo {
+    background-color: #DDDDDD;
+    clip-path: polygon(100% 0, 90% 10%, 10% 10%, 0 0);
+}
+
+.baixo1-esquerda{
+    background-color: black;
+    clip-path: polygon(88% 100%, 88% 0, 100% 10%, 100% 90%);
+}
+.baixo1-direita{
+    background-color: black;
+    clip-path: polygon(0 90%, 0 10%, 12% 0, 12% 100%);
+}
+
+.baixo1 {
+    background-color: black;
+    clip-path: polygon(90% 0, 100% 20%, 0 20%, 10% 0);
+}
+
+/* SEGUNDO NÚMERO */
+
+#container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". topo2 ."
+      "topo2-esquerda meio2-alto topo2-direita"
+      "baixo2-esquerda meio2-baixo baixo2-direita"
+      ". baixo2 .";
+    width: 250px;
+    height: 300px;
+  }
+  
+  .topo2 { grid-area: topo2; }
+  
+  .topo2-esquerda { grid-area: topo2-esquerda; }
+  
+  .baixo2-esquerda { grid-area: baixo2-esquerda; }
+  
+  .baixo2 { grid-area: baixo2; }
+  
+  .baixo2-direita { grid-area: baixo2-direita; }
+  
+  .topo2-direita { grid-area: topo2-direita; }
+  
+  .meio2-alto { grid-area: meio2-alto; }
+  
+  .meio2-baixo { grid-area: meio2-baixo; }
+   
+.topo2 {
+    background-color: black;
+    clip-path: polygon(0 82%, 100% 83%, 90% 100%, 10% 100%);
+}
+
+.topo2-esquerda{
+    background-color: black;
+    clip-path: polygon(88% 100%, 88% 0, 100% 10%, 100% 90%);
+}
+.topo2-direita{
+    background-color: black;
+    clip-path: polygon(0 90%, 0 10%, 12% 0, 12% 100%);
+}
+
+.meio2-alto {
     background-color: black;
     clip-path: polygon(90% 90%, 100% 100%, 0 100%, 10% 88%);
 }
 
-.meio-baixo {
+.meio2-baixo {
     background-color: black;
     clip-path: polygon(100% 0, 90% 10%, 10% 10%, 0 0);
 }
 
-.baixo-esquerda{
+.baixo2-esquerda{
     background-color: black;
     clip-path: polygon(88% 100%, 88% 0, 100% 10%, 100% 90%);
 }
-.baixo-direita{
+.baixo2-direita{
     background-color: black;
     clip-path: polygon(0 90%, 0 10%, 12% 0, 12% 100%);
 }
 
-.baixo {
+.baixo2 {
     background-color: black;
     clip-path: polygon(90% 0, 100% 20%, 0 20%, 10% 0);
 }
-   
 
+/* TERCEIRO NÚMERO */
+
+#container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". topo3 ."
+      "topo3-esquerda meio3-alto topo3-direita"
+      "baixo3-esquerda meio3-baixo baixo3-direita"
+      ". baixo3 .";
+    width: 250px;
+    height: 300px;
+  }
+  
+  .topo3 { grid-area: topo3; }
+  
+  .topo3-esquerda { grid-area: topo3-esquerda; }
+  
+  .baixo3-esquerda { grid-area: baixo3-esquerda; }
+  
+  .baixo3 { grid-area: baixo3; }
+  
+  .baixo3-direita { grid-area: baixo3-direita; }
+  
+  .topo3-direita { grid-area: topo3-direita; }
+  
+  .meio3-alto { grid-area: meio3-alto; }
+  
+  .meio3-baixo { grid-area: meio3-baixo; }
+   
+ .topo3 {
+    background: black;
+    clip-path: polygon(0 82%, 100% 83%, 90% 100%, 10% 100%);
+}
+
+.topo3-esquerda{
+    background-color: black;
+    clip-path: polygon(88% 100%, 88% 0, 100% 10%, 100% 90%);
+}
+.topo3-direita{
+    background-color: black;
+    clip-path: polygon(0 90%, 0 10%, 12% 0, 12% 100%);
+}
+
+.meio3-alto {
+    background-color: black;
+    clip-path: polygon(90% 90%, 100% 100%, 0 100%, 10% 88%);
+}
+
+.meio3-baixo {
+    background-color: black;
+    clip-path: polygon(100% 0, 90% 10%, 10% 10%, 0 0);
+}
+
+.baixo3-esquerda{
+    background-color: black;
+    clip-path: polygon(88% 100%, 88% 0, 100% 10%, 100% 90%);
+}
+.baixo3-direita{
+    background-color: black;
+    clip-path: polygon(0 90%, 0 10%, 12% 0, 12% 100%);
+}
+
+.baixo3 {
+    background-color: black;
+    clip-path: polygon(90% 0, 100% 20%, 0 20%, 10% 0);
+}   
+
+/* Tirando espaçamento entre grids */
+
+#container2 {
+    margin: 0 -120px 0 -120px
+}
+
+/* Visibilidade grids */
+
+#container2 {
+    display: none;
+}
+
+#container3 {
+    display: none;
+}
