@@ -13,6 +13,7 @@ async function getNumber() {
 function log(number,s) { 
   console.log("API: "+ number + " | Status code: "+s);
   if (s !== 200){
+       teste()
        percorreInput(s)
        document.getElementById('newGame').style.display = 'inline-block'; 
   }
@@ -33,7 +34,6 @@ function palpite() {
 // Função que irá descobrir quantos grids serão necessários para exibir o número
 function percorreInput(input){
    console.log("O valor é: "+input)
-   console.log(typeof input)
    if(input < 10){
       document.getElementById('container2').style.display = 'none'; 
       document.getElementById('container3').style.display = 'none'; 
@@ -42,12 +42,15 @@ function percorreInput(input){
       document.getElementById('container3').style.display = 'none'; 
    }else if(input < 1000){   
       document.getElementById('container2').style.display = 'grid';
-      document.getElementById('container3').style.display = 'grid';  
+      document.getElementById('container3').style.display = 'grid';
+      if(input >= 400){
+         exibirNumeros(input)
+      }  
    }
 }
 
 function exibirNumeros(input){
-      let numeros = input.split("");
+      let numeros = input.toString()
 
       if(numeros[0] == 0){
          let numero = document.querySelectorAll("div.topo1, div.topo1-direita, div.baixo1-esquerda, div.baixo1, div.topo1-esquerda, div.baixo1-direita");

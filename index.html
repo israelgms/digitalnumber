@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="./css/grid.css">
     <title>Acerte o número</title>
     <script src="./js/newGame.js" type="text/javascript"></script>
+    <script src="./js/teste.js" type="text/javascript"></script>
 </head>
 
 <body>
     <main>
-        <script type="module">
+        <script type="module">        
             let [number,s] = await getNumber();
+            log(number, s)
             // let input = palpite();
             // percorreInput(input);
-            log(number, s)
+            
         </script>
         <section>
             <div class="playArea">

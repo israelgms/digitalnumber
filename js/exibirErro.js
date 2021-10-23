@@ -1,5 +1,5 @@
-function exibirErro() {
-    let numeros = input.split("");
+export default function exibirErro(input) {
+    alert('opa')
 
       if(numeros[0] == 0){
          let numero = document.querySelectorAll("div.topo1, div.topo1-direita, div.baixo1-esquerda, div.baixo1, div.topo1-esquerda, div.baixo1-direita");
@@ -298,5 +298,3 @@ function exibirErro() {
          });
       }
 }
-
-export default exibirErro
