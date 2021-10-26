@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/grid.css">
     <title>Acerte o número</title>
-    <script src="./js/newGame.js" type="text/javascript"></script>
-    <script src="./js/teste.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+    <script src="./js/game.js" type="text/javascript"></script>
+    <script src="./js/exibirNumeros.js" type="text/javascript"></script>
 </head>
 
 <body>
     <main>
-        <script type="module">        
+        <script type="module">
             let [number,s] = await getNumber();
-            log(number, s)
-            // let input = palpite();
-            // percorreInput(input);
-            
+            window.number = number;
+            window.statusCode = s;
+            log(number,s);
+        </script>
+        <script>
         </script>
         <section>
             <div class="playArea">
@@ -65,8 +67,8 @@
                     <button id="newGame" type="button" onclick="newGame()"><img src="./image/refresh_24px.png" alt="Refresh icon">NOVA PARTIDA</button>
                     </div>
                 <div class="input">
-                    <input type="number" min="0" max="300" oninput="input(this)" id="palpite" placeholder="Digite o palpite">
-                    <button type="button" id="button" onclick="palpite()">Enviar</button>
+                    <input type="number" min="0" max="300" oninput="input(this)" id="palpite" pattern="[0-9]+$" placeholder="Digite o palpite">
+                    <button type="button" id="submit" onclick="game(number, statusCode)">Enviar</button>
                 </div>
                 <div class="teste"></div>
             </div>
